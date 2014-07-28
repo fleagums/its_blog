@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Oswald:700);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+#background {
+  background:#76B4CC;
+}
+
+#Article{
+  background:#1B3BCC;
+}
+
+#ID{
+  font:white, 'Open Sans', sans-serif;
+}
+
+#Title{
+  font:white, 'Oswald', sans-serif;
+}
+
+#Body{
+  font:white, 'Open Sans', sans-serif;
+}
+
+#Author{
+  font:white, 'Lobster', cursive;
+}
