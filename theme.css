@@ -3,25 +3,48 @@
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
 #background {
-  background:#76B4CC;
+  background:#3D2509;
+  padding-bottom:10px;
 }
 
-#Article{
-  background:#1B3BCC;
+#header {
+  background:#234E6B;
+  padding:20px;
+  text-align:center;
+  color:#CEE5F5;
+  font:30px 'Oswald', sans-serif;
 }
 
-#ID{
-  font:white, 'Open Sans', sans-serif;
+#body{
+  background:#849EB0;
+  margin:30px;
+  padding:15px 10px 15px 10px;
 }
 
-#Title{
-  font:white, 'Oswald', sans-serif;
+#article{
+  color:#735737;
+  font-family:'Open Sans', sans-serif;
 }
 
-#Body{
-  font:white, 'Open Sans', sans-serif;
+#id{
+  color:brown;
+  font-family:'Open Sans', sans-serif;
 }
 
-#Author{
-  font:white, 'Lobster', cursive;
+#title{
+  color:white;
+  text-decoration:none;
+  font-family: 'Oswald', sans-serif;
+  margin-left:40px;
+}
+
+#author{
+  color:white;
+  font-family:'Lobster', cursive;
+  text-align:right;
+  margin-right:50px;
+}
+
+a:hover{
+  color:pink;
 }
