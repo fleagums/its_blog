@@ -2,17 +2,30 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:700);
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
+
 #background {
   background:#3D2509;
   padding-bottom:10px;
 }
 
-#header {
+#head {
   background:#234E6B;
-  padding:20px;
-  text-align:center;
+  height:15%;
+}
+
+#header {
+  display:inline-block;
+  padding:25px 0px 0px 450px;
   color:#CEE5F5;
-  font:30px 'Oswald', sans-serif;
+  font:40px 'Oswald', sans-serif;
+}
+
+#magnify_text {
+  display:inline-block;
+  float:right;
+  margin: 25px;
+  height: 60px;
+  width: 60px;
 }
 
 #body{
@@ -23,24 +36,19 @@
 
 #article{
   color:#735737;
-  font-family:'Open Sans', sans-serif;
-}
-
-#id{
-  color:brown;
-  font-family:'Open Sans', sans-serif;
+  font:20px 'Open Sans', sans-serif;
 }
 
 #title{
   color:white;
   text-decoration:none;
-  font-family: 'Oswald', sans-serif;
+  font:30px 'Oswald', sans-serif;
   margin-left:40px;
 }
 
 #author{
   color:white;
-  font-family:'Lobster', cursive;
+  font:20px 'Lobster', cursive;
   text-align:right;
   margin-right:50px;
 }

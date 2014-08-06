@@ -3,11 +3,13 @@
 <head>
   <title>Hey Everyone, LOOK! It's BLOG!!</title>
   <link rel="stylesheet" type="text/css" href="theme.css">
+  <script src="scripts/jquery-1.11.1.min.js"></script>
+  <script src="scripts/blog.js"></script>
 </head>
 <body>
 <div id="background">
 
-<div id="header"><header>Hey, Everyone, LOOK! It's BLOG!!</header></div>
+<div id="head"><header id="header">Hey, Everyone, LOOK! It's BLOG!!</header><img id="magnify_text" src="images/text_larger.jpg"></div>
 
 <?php
 
@@ -26,6 +28,11 @@ while($row = mysql_fetch_array($result)) {
   "<div id=body>" . "<article id=article> ".$row['Body']."</article>" .
   "<p id=author> ". $row['Author']."</p>" . "</div>";
 }
+
+/*$image = #magnify_text
+
+if($image = :visited) {
+  #header, #title, #body, #author...could work if I wrapped img tag in anchor tags??*/
 
 mysql_close($connect);
 

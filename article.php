@@ -3,12 +3,14 @@
 <head>
   <title>Hey Everyone, LOOK! It's BLOG!!</title>
   <link rel="stylesheet" type="text/css" href="theme.css">
+  <script src="scripts/jquery-1.11.1.min.js"></script>
+  <script src="scripts/blog.js"></script>
 </head>
 <body>
 <div id="background">
 
-<div id="header"></div>
-<?php
+<div id="head"><header id="header">Hey, Everyone, LOOK! It's BLOG!!</header><img id="magnify_text" src="images/text_larger.jpg"></div>
+ <?php
 
 $id = isset($_GET['id']) ? $_GET['id'] : '';
 
