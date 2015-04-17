@@ -15,15 +15,15 @@
 
 $localhost = '127.0.0.1'; // to connect to edna use 23.92.19.55
 $user = 'root';
-$pw = '';
+$pw = 'dkfhur739475002';
 
-$connect=mysql_connect($localhost, $user, $pw);
-mysql_select_db('Becky_blog');
+$connect=mysqli_connect($localhost,$user,$pw);
+mysqli_select_db($connect,'its_blog');
 
-$result = mysql_query("SELECT * FROM Articles") or die(mysql_error());
+$result = mysqli_query($connect,"SELECT * FROM Articles") or die(mysqli_error());
 
 
-while($row = mysql_fetch_array($result)) {
+while($row = mysqli_fetch_array($result)) {
   echo "<h2><a id=title href=article.php?id=".$row['ID']."> ".$row['Title']."</a></h2>" .
   "<div id=body>" . "<article id=article> ".$row['Body']."</article>" .
   "<p id=author> ". $row['Author']."</p>" . "</div>";
@@ -34,7 +34,7 @@ while($row = mysql_fetch_array($result)) {
 if($image = :visited) {
   #header, #title, #body, #author...could work if I wrapped img tag in anchor tags??*/
 
-mysql_close($connect);
+mysqli_close($connect);
 
 ?>
 </div>

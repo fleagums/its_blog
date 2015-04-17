@@ -17,13 +17,13 @@ $id = isset($_GET['id']) ? $_GET['id'] : '';
 
 $localhost = '127.0.0.1'; // to connect to edna use 23.92.19.55
 $user = 'root'; //identifies the user name for the local host
-$pw = '';
+$pw = 'dkfhur739475002';
 
-$connect=mysql_connect($localhost, $user, $pw);
-mysql_select_db('Becky_blog');
+$connect=mysqli_connect($localhost, $user, $pw);
+mysqli_select_db($connect,'its_blog');
 
-$result = mysql_query("SELECT * FROM Articles WHERE ID ='".$id."'") or die(mysql_error());
-$row = mysql_fetch_array($result);
+$result = mysqli_query($connect,"SELECT * FROM Articles WHERE ID ='".$id."'") or die(mysqli_error());
+$row = mysqli_fetch_array($result);
 
   echo "<h1 id=title>".$row['Title']."</h1>" .
   "<div id=body>" . "<article id=article> ".$row['Body']."</article>" .
@@ -31,7 +31,7 @@ $row = mysql_fetch_array($result);
 
 
 
-mysql_close($connect);
+mysqli_close($connect);
 
 ?>
 </div>
