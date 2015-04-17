@@ -17,7 +17,7 @@ $id = isset($_GET['id']) ? $_GET['id'] : '';
 
 $localhost = '127.0.0.1'; // to connect to edna use 23.92.19.55
 $user = 'root'; //identifies the user name for the local host
-$pw = 'dkfhur739475002';
+$pw = '***************';
 
 $connect=mysqli_connect($localhost, $user, $pw);
 mysqli_select_db($connect,'its_blog');
