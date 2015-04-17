@@ -1,2 +1,1 @@
-its_blog
-========
+The purpose of this exercise was to utilize PHP in conjunction with MySQL to extract data from the MySQL database and format it using HTML and style it with CSS.  A bit of jQuery was also used to increase the font size for readers with impaired vision.  
